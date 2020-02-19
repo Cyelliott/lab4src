@@ -39,13 +39,13 @@ public:
       int code = buffer[10];
       short acceleration = * (short *) (buffer + 12);
       
-      ButtonEvent(code, acceleration);
+      AccelerationEvent(code, acceleration);
       
     }
   
   }
   
-  void ButtonEvent(int code, int acceleration) {
+  void AccelerationEvent(int code, int acceleration) {
   
     cout << "Code = " << code << ", acceleration = " << acceleration << '\n'; 
   
